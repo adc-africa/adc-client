@@ -1,0 +1,28 @@
+@import "../../../styles/abstracts/variables";
+
+.recent__transactions{
+    margin-top: 2rem;
+    background: #FFF;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+
+    h3{
+        font-weight: 800;
+        padding-bottom: 1.2rem;
+        color: #1b1b1b;
+    }
+
+    a{
+        background: $col-primary-btn;
+        border-radius: 6px;
+        padding: .7rem 1.6rem;
+        color: #FFF;
+        font-family: $font;
+        font-weight: bold;
+        font-size: .8rem;
+        text-transform: capitalize;
+        display: block;
+        text-align: center;
+    }
+}

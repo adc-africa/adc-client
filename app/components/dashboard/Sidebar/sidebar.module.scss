@@ -1,0 +1,42 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.sidebar{
+    border-right: 1px solid #ebebeb;
+    height: 100vh;
+    background: #FFF;
+
+    &__logo{
+        border-bottom: 1px solid #ebebeb;
+        padding: .8rem 2rem;
+        background: #FFF;
+    }
+
+    &__links{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
+}
+
+//Non active sidebar link
+.link{
+    display: flex;
+    align-items: center;
+    padding: .8rem 1.5rem;
+    border-radius: 6px;
+    color: #343434;
+    gap: 10px;
+    font-family: $font;
+    font-weight: bold;
+    font-size: .85rem;
+    margin-bottom: 1rem
+
+}
+
+//Active sidebar link
+.active{
+    @extend .link;
+    background: $col-primary-btn;
+    color: #FFF;
+}

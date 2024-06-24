@@ -1,0 +1,58 @@
+import styles from "./todos.module.scss"
+import Todo from "../Todo"
+
+const Todos = () => {
+  return (
+    <div className={ styles["todos"] }>
+        <h3>Quick Help</h3>
+        <div className={ styles["todos__todos"] }>
+        <Todo 
+            path="" 
+            label="Add savings"
+         />
+
+        <Todo 
+            path="" 
+            label="Investment plans"
+         />
+
+         <Todo 
+            path="" 
+            label="KYC verification"
+         />
+
+        <Todo 
+            path="" 
+            label="Create transaction pin"
+         />
+
+        <Todo 
+            path="" 
+            label="Payment settings"
+         />
+
+        <Todo 
+            path="" 
+            label="Change password"
+         />
+
+        <Todo 
+            path="" 
+            label="Withdraw funds"
+         />
+
+        <Todo 
+            path="" 
+            label="Add savings plan"
+         />
+
+        <Todo 
+            path="" 
+            label="Customer care"
+         />
+        </div>
+    </div>
+  )
+}
+
+export default Todos

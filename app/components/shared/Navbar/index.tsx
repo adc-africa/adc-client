@@ -13,14 +13,14 @@ const Navbar = () => {
                     <div className={ styles["navbar__content__left__links"] }>
                         <Link href="/invest">Invest</Link>
                         <Link href="/save">Save</Link>
-                        <Link href="/invest">Company</Link>
-                        <Link href="/invest">Contact Us</Link>
+                        <Link href="/about">Company</Link>
+                        <Link href="/contact-us">Contact Us</Link>
                     </div>
                 </div>
                 <div className={ styles["navbar__content__right"] }>
                    <div className={ styles["navbar__content__right__links"] }>
-                    <Link className={ styles["navbar__content__right__links--login"] }  href="/sign-in">Login</Link>
-                    <Link className={ styles["navbar__content__right__links--register"] } href="/sign-up">Create a free account</Link>
+                    <Link className={ styles["navbar__content__right__links--login"] }  href="/auth/sign-in">Login</Link>
+                    <Link className={ styles["navbar__content__right__links--register"] } href="/auth/sign-up">Create a free account</Link>
                    </div>
                 </div>
                 { /* Navbar hamburger on mobile goes here */ }

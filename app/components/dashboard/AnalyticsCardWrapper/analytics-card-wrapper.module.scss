@@ -1,0 +1,9 @@
+@import "../../../styles/abstracts/variables";
+
+.analytics{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    gap: 20px;
+}

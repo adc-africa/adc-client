@@ -1,0 +1,13 @@
+@import "../../../styles/abstracts/variables";
+
+.todo{
+    border: 1px solid $col-primary-btn;
+    padding: .8rem 1.3rem;
+    border-radius: 6px;
+    transition: all ease .5s;
+}
+
+.todo:hover{
+    background: $col-primary-btn;
+    color: #FFF !important;
+}
