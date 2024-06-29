@@ -4,7 +4,10 @@ import Todo from "../Todo"
 const Todos = () => {
   return (
     <div className={ styles["todos"] }>
-        <h3>Quick Help</h3>
+       <div className={ styles["todos__header"] }>
+            <h3>Quick Help</h3>
+            <p>Set up seamlessly and get going</p>
+       </div>
         <div className={ styles["todos__todos"] }>
         <Todo 
             path="" 
@@ -23,7 +26,7 @@ const Todos = () => {
 
         <Todo 
             path="" 
-            label="Create transaction pin"
+            label="Transaction pin"
          />
 
         <Todo 

@@ -5,6 +5,7 @@ import Sidebar from "../components/dashboard/Sidebar"
 import DashboardNavbar from "../components/dashboard/Navbar"
 import { ReactNode } from "react"
 import RightSideBar from "../components/dashboard/RightSideBar"
+import BottomBar from "../components/dashboard/BottomBar"
 
 interface dashProps {
     children: ReactNode
@@ -14,6 +15,9 @@ const DashboardLayout: React.FC<dashProps>= ({ children }) => {
 
   return (
     <div className={ styles["layout"] }>
+        <div className={ styles["layout__bottombar"] }>
+            <BottomBar />
+        </div>
         <div className={ styles["layout__sidebar"] }>
             <Sidebar />
         </div>

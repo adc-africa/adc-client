@@ -37,13 +37,16 @@ const RecentTransactions = () => {
   ]
   return (
     <div className={ styles["recent__transactions"] }>
-        <h3>Recent Transactions</h3>
+        <div className={ styles["recent__transactions__header"] }>
+            <h3>Recent Transactions</h3>
+            <p>Track your transactions today!</p>
+        </div>
         <div className={ styles["recent__transactions__transactions"] }>
          { transactions?.map((transaction) => (
            <TransactionCard transaction={transaction} />
          )) }
           <br />
-          <Link href="">See all transactions</Link>
+          <Link href="/dashboard/transactions">See all transactions</Link>
         </div>
     </div>
   )

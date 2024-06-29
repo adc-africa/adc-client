@@ -5,10 +5,24 @@
     border-bottom: 1px solid #ebebeb;
     padding: 1.15rem 2rem;
     font-family: $font;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phone {
+        padding: 1rem 1.5rem;
+    }
+
+    p{
+        @include phone {
+            padding-right: 3.5rem;
+        }
+    }
+
+    &__left{
+        @include phone {
+            display: none;
+        }
+    }
 
     &__right{
         display: flex;

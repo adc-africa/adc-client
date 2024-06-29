@@ -14,7 +14,6 @@ const TransactionCard = ({ transaction }) => {
             <span className={ type === "credit" ? styles["transaction__credit"] : styles["transaction__debit"] }>{ type === "credit" ? "Credit" : "Debit" }</span></div>
         <div className={ styles["transaction__grid2"] }>
             { type === "credit" ? <p>Account credited</p> : <p>Account debited</p> }
-            {/* <p className={ type === "credit" ? styles["credit"] : styles["debit"] }>&#8358; { Number(amount).toLocaleString("en-US") }</p> */}
             <small>{ date }</small>
         </div>
         <div className={ styles["transaction__grid3"] }>

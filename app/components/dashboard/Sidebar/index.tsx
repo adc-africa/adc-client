@@ -68,22 +68,22 @@ const Sidebar = () => {
           />
 
           <SidebarLink 
-            path="referrers" 
-            label="Referral Earnings" 
+            path="transactions" 
+            label="My Transactions" 
             icon={<FaCodeBranch size="1.3rem" />} 
           />
 
             <SidebarLink 
-            path="notification" 
+            path="notifications" 
             label="Notifications" 
             icon={<MdNotificationsActive size="1.3rem" />} 
           />
 
-            <SidebarLink 
+            {/* <SidebarLink 
             path="payment-settings" 
             label="Payment Settings" 
             icon={<LuSettings2 size="1.3rem" />} 
-          />
+          /> */}
 
             <SidebarLink 
             path="payment-settings" 
