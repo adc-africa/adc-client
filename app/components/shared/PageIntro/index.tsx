@@ -16,7 +16,7 @@ const PageIntro:React.FC<introPros> = ({ title, description }) => {
                <div className={ styles["page__intro__content--text"] }>
                     <h2>{ title }</h2>
                     <p>{ description }</p>
-                    <LinkButton type="primary" label="Create a free account" path="/sign-up" />
+                    <LinkButton type="primary" label="Create a free account" path="sign-up" />
                </div>
                 <div className={ styles["page__intro__content__image"] }>
                     <Image src={ hand } alt="Helper thumbnail" />
